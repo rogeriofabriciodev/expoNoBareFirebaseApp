@@ -9,6 +9,7 @@ import SignUp from './screens/SignUp';
 import SignIn from './screens/SignIn';
 import Loading from './screens/LoadingScreen';
 import Dashboard from './screens/Dashboard';
+import TakePhoto from './screens/TakePhoto';
 
 const Stack = createStackNavigator();
 
@@ -26,6 +27,7 @@ export default function App() {
         <Stack.Screen name='SignUp' component={ SignUp } options={{ headerShow: false }} />
         <Stack.Screen name='SignIn' component={ SignIn } options={{ headerShow: false }} />
         <Stack.Screen name={ 'Dashboard' } component={ Dashboard } options={{ headerShow: false }} />
+        <Stack.Screen name={ 'TakePhoto' } component={ TakePhoto } options={{ headerShow: false }} />
       </Stack.Navigator>
       
       <StatusBar style="auto" />

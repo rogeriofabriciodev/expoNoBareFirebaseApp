@@ -26,7 +26,6 @@ export default function Dashboard({ navigation }) {
                 Alert.alert('Usuário não foi encontrado!')
             } else {
                 let dataObj = doc.data();
-                console.log('dataObj: ', firebase.auth().currentUser);
                 setFirstName(dataObj.firstName);
             }
         }
@@ -40,6 +39,10 @@ export default function Dashboard({ navigation }) {
         navigation.replace('Home');
     };
 
+    const handleTakePhoto = () => {
+        navigation.replace('TakePhoto');
+    };
+
     return (
         <View style={styles.container}>
             <Text style={styles.titleText}>Dashboard</Text>
@@ -49,6 +52,12 @@ export default function Dashboard({ navigation }) {
                  onPress={handlePress}
             >
                 <Text style={styles.buttonText}>Log Out</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+                 style={styles.button}
+                 onPress={handleTakePhoto}
+            >
+                <Text style={styles.buttonText}>Take a Photo</Text>
             </TouchableOpacity>
         </View>
     )
