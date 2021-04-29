@@ -25,7 +25,7 @@ export default function WelcomeScreen({navigation}) {
                 Você tem uma conta?
             </Text>
             <TouchableOpacity s
-                tyle={styles.button}
+                style={styles.button}
                 onPress={() => navigation.navigate('SignIn')}
             >
                 <Text style={styles.buttonText}>
@@ -41,13 +41,14 @@ const styles = StyleSheet.create({
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
+      backgroundColor: '#4ecdc4',
     },
     button: {
       width: 200,
       borderRadius: 15,
       borderWidth: 3,
       borderColor: 'white',
-      backgroundColor: '#4ecdc4',
+      backgroundColor: '#ffffff',
       padding: 5,
       margin: '2%'
     },

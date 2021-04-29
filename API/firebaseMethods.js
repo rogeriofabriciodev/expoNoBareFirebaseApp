@@ -9,7 +9,7 @@ export async function registration(email, password, lastName, firstName) {
         
 
         const db = firebase.firestore();
-        db.collection("user")
+        db.collection("users")
             .doc(currentUser.uid)
             .set({
                 email: currentUser.email,

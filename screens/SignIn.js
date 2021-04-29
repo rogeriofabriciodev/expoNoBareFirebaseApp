@@ -12,7 +12,7 @@ import {
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { signIn } from '../API/firebaseMethods';
 
-export default function SignIn() {
+export default function SignIn({navigation}) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -109,6 +109,7 @@ const styles = StyleSheet.create({
       borderColor:'#a4eddf',
       padding: 10,
       margin: 5,
+      borderRadius: 10,
     },
     inlineText: {
       textAlign: 'center',

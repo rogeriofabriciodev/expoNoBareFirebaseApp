@@ -18,7 +18,7 @@ export default function Dashboard({ navigation }) {
         async function getUserInfo() {
             let doc = await firebase
                 .firestore()
-                .collection('user')
+                .collection('users')
                 .doc(currentUserUID)
                 .get();
 
@@ -26,12 +26,13 @@ export default function Dashboard({ navigation }) {
                 Alert.alert('Usuário não foi encontrado!')
             } else {
                 let dataObj = doc.data();
+                console.log('dataObj: ', firebase.auth().currentUser);
                 setFirstName(dataObj.firstName);
             }
         }
 
         getUserInfo();
-
+        
     })
 
     const handlePress = () => {

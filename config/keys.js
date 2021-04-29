@@ -1,10 +1,11 @@
 export default {
     firebaseConfig: {
-        apiKey: "AIzaSyC6ZSnqYGHTbAavxfH3vY1FXbeB6jSk9Kc",
-        authDomain: "expoapp-20e13.firebaseapp.com",
-        projectId: "expoapp-20e13",
-        storageBucket: "expoapp-20e13.appspot.com",
-        messagingSenderId: "616357051436",
-        appId: "1:616357051436:web:88c9f0b653b28f8c446589"
+        apiKey: "AIzaSyBTRiMD6m6mUHsF092HR07CPr5UAnR7r5I",
+        authDomain: "expoapp-de855.firebaseapp.com",
+        projectId: "expoapp-de855",
+        storageBucket: "expoapp-de855.appspot.com",
+        messagingSenderId: "156278805840",
+        appId: "1:156278805840:web:bfb0be96d4c29034fe8855",
+        measurementId: "G-RKEKMNG19Z"
     }
 }

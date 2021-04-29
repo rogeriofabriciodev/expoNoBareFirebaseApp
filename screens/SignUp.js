@@ -165,5 +165,6 @@ const styles = StyleSheet.create({
       borderColor:'#a4eddf',
       padding: 10,
       margin: 5,
+      borderRadius: 10,
     },
   });
