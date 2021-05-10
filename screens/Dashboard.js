@@ -26,7 +26,7 @@ export default function Dashboard({ navigation }) {
                 Alert.alert('Usuário não foi encontrado!')
             } else {
                 let dataObj = doc.data();
-                setFirstName(dataObj.firstName);
+                setFirstName(dataObj.name);
             }
         }
 
